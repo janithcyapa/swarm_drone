@@ -1,0 +1,33 @@
+[1.107s] Invoking command in '/home/jazz/Projects/swarm_drone_ws/src/mavsdk_interface': DEBUGINFOD_URLS=https://debuginfod.centos.org/ PYTHONPATH=/home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/prefix_override:/usr/lib/python3.9/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mavsdk_interface build --build-base /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build install --record /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/install.log --single-version-externally-managed install_data
+[1.485s] running egg_info
+[1.485s] creating ../../build/mavsdk_interface/mavsdk_interface.egg-info
+[1.486s] writing ../../build/mavsdk_interface/mavsdk_interface.egg-info/PKG-INFO
+[1.486s] writing dependency_links to ../../build/mavsdk_interface/mavsdk_interface.egg-info/dependency_links.txt
+[1.486s] writing entry points to ../../build/mavsdk_interface/mavsdk_interface.egg-info/entry_points.txt
+[1.487s] writing requirements to ../../build/mavsdk_interface/mavsdk_interface.egg-info/requires.txt
+[1.487s] writing top-level names to ../../build/mavsdk_interface/mavsdk_interface.egg-info/top_level.txt
+[1.487s] writing manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+[1.508s] reading manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+[1.509s] writing manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+[1.509s] running build
+[1.509s] running build_py
+[1.509s] creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build
+[1.509s] creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib
+[1.509s] creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface
+[1.509s] copying mavsdk_interface/__init__.py -> /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface
+[1.509s] running install
+[1.510s] running install_lib
+[1.511s] creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface
+[1.512s] copying /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface/__init__.py -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface
+[1.512s] byte-compiling /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface/__init__.py to __init__.cpython-39.pyc
+[1.512s] running install_data
+[1.513s] creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index
+[1.513s] creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index
+[1.513s] creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index/packages
+[1.513s] copying resource/mavsdk_interface -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index/packages
+[1.513s] copying package.xml -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/mavsdk_interface
+[1.513s] running install_egg_info
+[1.515s] Copying ../../build/mavsdk_interface/mavsdk_interface.egg-info to /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface-0.0.1-py3.9.egg-info
+[1.517s] running install_scripts
+[1.543s] writing list of installed files to '/home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/install.log'
+[1.570s] Invoked command in '/home/jazz/Projects/swarm_drone_ws/src/mavsdk_interface' returned '0': DEBUGINFOD_URLS=https://debuginfod.centos.org/ PYTHONPATH=/home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/prefix_override:/usr/lib/python3.9/site-packages/colcon_core/task/python/colcon_distutils_commands:/home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages:${PYTHONPATH} _=/usr/bin/env /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/mavsdk_interface build --build-base /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build install --record /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/install.log --single-version-externally-managed install_data

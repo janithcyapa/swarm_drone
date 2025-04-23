@@ -1,0 +1,31 @@
+running egg_info
+creating ../../build/mavsdk_interface/mavsdk_interface.egg-info
+writing ../../build/mavsdk_interface/mavsdk_interface.egg-info/PKG-INFO
+writing dependency_links to ../../build/mavsdk_interface/mavsdk_interface.egg-info/dependency_links.txt
+writing entry points to ../../build/mavsdk_interface/mavsdk_interface.egg-info/entry_points.txt
+writing requirements to ../../build/mavsdk_interface/mavsdk_interface.egg-info/requires.txt
+writing top-level names to ../../build/mavsdk_interface/mavsdk_interface.egg-info/top_level.txt
+writing manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+reading manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+writing manifest file '../../build/mavsdk_interface/mavsdk_interface.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build
+creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib
+creating /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface
+copying mavsdk_interface/__init__.py -> /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface
+running install
+running install_lib
+creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface
+copying /home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/build/lib/mavsdk_interface/__init__.py -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface
+byte-compiling /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface/__init__.py to __init__.cpython-39.pyc
+running install_data
+creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index
+creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index
+creating /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index/packages
+copying resource/mavsdk_interface -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/ament_index/resource_index/packages
+copying package.xml -> /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/share/mavsdk_interface
+running install_egg_info
+Copying ../../build/mavsdk_interface/mavsdk_interface.egg-info to /home/jazz/Projects/swarm_drone_ws/install/mavsdk_interface/lib/python3.9/site-packages/mavsdk_interface-0.0.1-py3.9.egg-info
+running install_scripts
+writing list of installed files to '/home/jazz/Projects/swarm_drone_ws/build/mavsdk_interface/install.log'
