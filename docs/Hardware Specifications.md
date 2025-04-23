@@ -37,14 +37,13 @@
 - **Frame Size**: 450mm - 550mm (diagonal motor-to-motor)
 - **Dimensions**:
   - Length x Width x Height
-  - Folded Dimensions (if applicable)
 - **Weight**:
-  - Empty Weight
+  - Frame Weight - 310g
   - Max Takeoff Weight (MTOW)
 - **Motor Mount Size**: 16mm, 19mm, etc. (depending on motor type)
-- **Propeller Size**: 1045, 8045, etc.
-- **Material**: Carbon Fiber, Aluminum, Plastic (specify material type)
-- **Landing Gear Type**: Fixed, Retractable, Skid, etc.
+- **Propeller Size**: 1045
+- **Material**: Glass fiber and Polyamide nylon
+- **Landing Gear Type**: Fixed
 
 ## 4. Performance Specifications
 - **Max Speed**:
