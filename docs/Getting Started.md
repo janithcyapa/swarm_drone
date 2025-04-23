@@ -63,26 +63,70 @@ Before getting started, ensure you have the following prerequisites:
 ### Setting Up the ESCs and Motors:
 1. Ensure that the **ESCs** are correctly connected to the Pixhawk and the motors.
 2. Verify that the **motor rotation direction** is correct by manually testing the motors in the QGroundControl software.
-
+<pre>
+        ▲ Front
+     (D) ⟳  ⟲ (A)
+         \   /
+          [X]
+         /   \
+     (C) ⟲  ⟳ (B)
+        ▼ Rear
+</pre>
 ## 4. Calibration
-
-### Accelerometer Calibration:
-1. Place the drone on a flat, level surface.
-2. Open QGroundControl and go to the **Sensors** calibration section.
-3. Follow the prompts to calibrate the **accelerometer** by rotating the drone on all axes.
-
-### Compass Calibration:
-1. Go to the **Compass Calibration** section in QGroundControl.
-2. Follow the instructions to rotate the drone in various orientations to calibrate the compass.
 
 ### Radio Calibration:
 1. Navigate to the **Radio Calibration** section.
 2. Move the sticks on your remote control to calibrate the radio.
+3. Make sure to use Mode 2.
+   
+### Sensor Calibration:
+1. Calibrate all the sensors.
+2. Accelerometer - Rotation : None
+3. Compass - Rotation : None
+4. Use external compass as priority one. 
 
-### Final System Check:
-1. Ensure that all components are connected properly (motors, ESCs, telemetry).
-2. Check that telemetry data is being received by QGroundControl.
-3. Perform a test flight in a safe area.
+### Power Setup
+1. Set up battery monitor 1,
+   1. Battery Monitor : Analog Voltage and Current
+   2. Capacity : ... (5200mAh)
+   3. Minimum arming voltage: ... (9v)
+   4. Power Sensor: Other
+   5. Voltage multipler: 10.1
+   6. Amps per volt:17.0 A/V
+   7. Amp Offset: 0.0v
+2. Then Calibrate the ESC
+   
+### Safety Setup
+1. Setup Battery Failsafe
+2. Setup General FailSafe
+3. Activate GeoFence while testing
+   
+### Parameters Configureation
+1. Need to enable SR*_** parameters to get data from the PX4 via mavLink
+   1. SR0_* → for Telemetry port 1
+   2. SR1_* → for Telemetry port 2
+   3. SR2_* → for USB (typically)
+2. Recomnaded Settings
+# Recommended PX4 MAVLink Stream Rates (`SRx_*` Parameters)
+
+| Parameter          | Data Type / Purpose                         | **USB (SR2_*)** | **Telemetry (SR0_*)** |
+|-------------------|----------------------------------------------|-----------------|------------------------|
+| `SRx_POSITION`     | GPS, global position                        | `10 Hz`         | `2 Hz`                 |
+| `SRx_RAW_SENSORS`  | IMU, magnetometer, barometer                | `10 Hz`         | `2 Hz`                 |
+| `SRx_RC_CHANNELS`  | RC input channels                           | `10 Hz`         | `2 Hz`                 |
+| `SRx_EXT_STATUS`   | EKF, estimator status                       | `2 Hz`          | `1 Hz`                 |
+| `SRx_EXTRA1`       | Attitude (quaternion)                       | `20 Hz`         | `5 Hz`                 |
+| `SRx_EXTRA2`       | Velocity, heading                           | `10 Hz`         | `2 Hz`                 |
+| `SRx_EXTRA3`       | Acceleration, position setpoints, etc.      | `5 Hz`          | `1 Hz`                 |
+| `SRx_RAW_CTRL`     | Control inputs (e.g., steering, throttle)   | `10 Hz`         | `5 Hz`                 |
+| `SRx_PARAMS`       | System parameters                           | `1 Hz`          | `1 Hz`                 |
+| `SRx_ADSB`         | ADS-B traffic (Automatic Dependent Surveillance-Broadcast) | `1 Hz`          | `1 Hz`                 |
+
+> 📝 Replace `SRx_*` with the appropriate stream ID:
+> - `SR0_*` = TELEM1 (Telemetry Port 1)
+> - `SR1_*` = TELEM2 (Telemetry Port 2, optional)
+> - `SR2_*` = USB (MAVSDK / QGC via direct USB)
+
 
 ## 5. Pre-flight Checklist
 
@@ -99,5 +143,5 @@ Once everything is set up and calibrated:
 - Perform a **low-altitude hover test** to ensure stability.
 - Gradually increase flight time and altitude to familiarize yourself with the controls.
 
-Congratulations, your SQARM DRONE is ready for flight!
+
 
