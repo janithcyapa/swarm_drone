@@ -78,20 +78,7 @@
 - **Power Regulator**:
   - Voltage Output: 5V
 
-## 6. Autopilot and Controller
-- **Controller**:
-  - Type: Pixhawk 4 FMUv2
-  - Processor: ARM Cortex M7, 32-bit
-  - Supported Software: PX4, ArduPilot, etc.
-  - Firmware: ChibiOS, multicopters/multirotors
-- **GPS/Compass**:
-  - Type: UBlox GPS M8N, I2C Compass
-  - Accuracy: <2.5m (horizontal accuracy)
-- **Telemetry**:
-  - Frequency: 433MHz, 915MHz, etc.
-  - Range: 1-5 km (depending on the transmitter/receiver)
-
-## 7. Communication Specifications
+## 6. Communication Specifications
 - **Remote Controller**:
   - Model: FlySky FS-iA6
   - Channels: 6 channels, 8 channels, etc.
@@ -100,7 +87,7 @@
   - Frequency: 2.4GHz, 5.8GHz (for communication and FPV)
   - Range: 1-5 km (depending on configuration)
 
-## 8. Sensor Specifications
+## 7. Sensor Specifications
 - **Accelerometer**:
   - Type: 3-axis MEMS
   - Range: ±16g
@@ -117,7 +104,7 @@
   - Model: UBlox M8N
   - Accuracy: < 2.5m (horizontal)
 
-## 9. Software and Firmware
+## 8. Software and Firmware
 - **Firmware**:
   - ArduPilot, PX4, etc.
   - Supported OS: Linux, Windows (for ground control station)
@@ -125,7 +112,7 @@
   - QGroundControl, Mission Planner, etc.
   - Features: Mission planning, real-time flight control, telemetry display
 
-## 10. Safety and Redundancy
+## 9. Safety and Redundancy
 - **Fail-safe Mechanisms**:
   - GPS Return-to-Launch (RTL)
   - Auto-land on low battery
@@ -136,7 +123,7 @@
   - RGB LEDs for flight status and errors
   - Flashing LEDs for warnings and low battery alerts
 
-## 11. Environmental Specifications
+## 10. Environmental Specifications
 - **Operating Temperature**:
   - Range: -20°C to 50°C
 - **Storage Temperature**:
@@ -144,7 +131,7 @@
 - **Humidity Resistance**:
   - IP rating (IP65, IP67, etc.) for moisture protection
 
-## 12. Miscellaneous
+## 11. Miscellaneous
 - **Mounting Options**:
   - Gimbals (for camera stabilization)
   - Camera/FPV mounts
