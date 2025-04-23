@@ -68,15 +68,15 @@
   - Capacity: 5200mAh
   - Discharge Rate: 60C
 - **ESC (Electronic Speed Controller)**:
-  - Rating: 30A, 40A, 50A, etc.
-  - Type: Brushless, OPTO, etc.
+  - Rating: 30A
+  - Type: Brushless OPTO
 - **Motors**:
   - Type: Brushless DC (BLDC)
-  - KV Rating: 880KV, 1000KV, etc.
+  - KV Rating: 880KV
 - **Power Distribution Board**:
   - Type: XT60, XT90 connectors, etc.
 - **Power Regulator**:
-  - Voltage Output: 5V, 12V, etc. (for onboard components)
+  - Voltage Output: 5V
 
 ## 6. Autopilot and Controller
 - **Controller**:
