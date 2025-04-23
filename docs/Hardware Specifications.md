@@ -81,10 +81,10 @@
 ## 6. Communication Specifications
 - **Remote Controller**:
   - Model: FlySky FS-iA6
-  - Channels: 6 channels, 8 channels, etc.
-  - Frequency: 2.4GHz, 5.8GHz
+  - Channels: 6 channels
+  - Frequency: 2.4GHz
 - **Radio Link**:
-  - Frequency: 2.4GHz, 5.8GHz (for communication and FPV)
+  - Frequency: 2.4GHz
   - Range: 1-5 km (depending on configuration)
 
 ## 7. Sensor Specifications
