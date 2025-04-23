@@ -50,7 +50,7 @@
   - Horizontal speed (m/s or km/h)
   - Vertical speed (m/s or ft/s)
 - **Max Flight Time**:
-  - Time in minutes (with specified battery)
+  - 8-12 minutes
 - **Max Altitude**:
   - Maximum altitude in meters (AGL or MSL)
 - **Max Range**:
@@ -63,10 +63,10 @@
 
 ## 5. Electrical Specifications
 - **Battery**:
-  - Type: LiPo, Li-ion, etc.
-  - Voltage: 11.1V, 14.8V, etc.
-  - Capacity: 5200mAh, 6000mAh, etc.
-  - Discharge Rate: 30C, 60C, etc.
+  - Type: LiPo
+  - Voltage: 11.1V
+  - Capacity: 5200mAh
+  - Discharge Rate: 60C
 - **ESC (Electronic Speed Controller)**:
   - Rating: 30A, 40A, 50A, etc.
   - Type: Brushless, OPTO, etc.
