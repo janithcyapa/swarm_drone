@@ -37,21 +37,20 @@
 - **Frame Size**: 450mm - 550mm (diagonal motor-to-motor)
 - **Dimensions**:
   - Length x Width x Height
-  - Folded Dimensions (if applicable)
 - **Weight**:
-  - Empty Weight
+  - Frame Weight - 310g
   - Max Takeoff Weight (MTOW)
 - **Motor Mount Size**: 16mm, 19mm, etc. (depending on motor type)
-- **Propeller Size**: 1045, 8045, etc.
-- **Material**: Carbon Fiber, Aluminum, Plastic (specify material type)
-- **Landing Gear Type**: Fixed, Retractable, Skid, etc.
+- **Propeller Size**: 1045
+- **Material**: Glass fiber and Polyamide nylon
+- **Landing Gear Type**: Fixed
 
 ## 4. Performance Specifications
 - **Max Speed**:
   - Horizontal speed (m/s or km/h)
   - Vertical speed (m/s or ft/s)
 - **Max Flight Time**:
-  - Time in minutes (with specified battery)
+  - 8-12 minutes
 - **Max Altitude**:
   - Maximum altitude in meters (AGL or MSL)
 - **Max Range**:
@@ -64,20 +63,20 @@
 
 ## 5. Electrical Specifications
 - **Battery**:
-  - Type: LiPo, Li-ion, etc.
-  - Voltage: 11.1V, 14.8V, etc.
-  - Capacity: 5200mAh, 6000mAh, etc.
-  - Discharge Rate: 30C, 60C, etc.
+  - Type: LiPo
+  - Voltage: 11.1V
+  - Capacity: 5200mAh
+  - Discharge Rate: 60C
 - **ESC (Electronic Speed Controller)**:
-  - Rating: 30A, 40A, 50A, etc.
-  - Type: Brushless, OPTO, etc.
+  - Rating: 30A
+  - Type: Brushless OPTO
 - **Motors**:
   - Type: Brushless DC (BLDC)
-  - KV Rating: 880KV, 1000KV, etc.
+  - KV Rating: 880KV
 - **Power Distribution Board**:
   - Type: XT60, XT90 connectors, etc.
 - **Power Regulator**:
-  - Voltage Output: 5V, 12V, etc. (for onboard components)
+  - Voltage Output: 5V
 
 ## 6. Autopilot and Controller
 - **Controller**:
