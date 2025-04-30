@@ -129,7 +129,7 @@ async def fetch_battery(drone):
         try:
             async for batt in drone.telemetry.battery():
                 telemetry_data["voltage"] = f"{batt.voltage_v:.2f}"
-                telemetry_data["battery"] = f"{batt.remaining_percent * 100:.1f}"
+                telemetry_data["battery"] = f"{batt.remaining_percent * 1:.1f}"
         except Exception as e:
             add_error(f"Battery fetch error: {str(e)}")
             await asyncio.sleep(1)
