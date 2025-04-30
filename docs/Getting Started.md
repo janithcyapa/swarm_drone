@@ -6,7 +6,7 @@ Welcome to the SQARM DRONE project! Follow the steps below to set up your drone,
 
 Before getting started, ensure you have the following prerequisites:
 
-### Software:
+### Software:**
 
 - **ROS 2 (Jazzy)**:
   ROS 2 is essential for interfacing with the drone's hardware, managing sensor data, and controlling the flight logic. Make sure you have **ROS 2 Jazzy** installed on your system.

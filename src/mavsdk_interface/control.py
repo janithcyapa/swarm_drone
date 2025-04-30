@@ -4,11 +4,33 @@ import math
 from mavsdk import System
 from mavsdk.offboard import PositionNedYaw, VelocityNedYaw
 from mavsdk.action import ActionError
+import glob
 
 async def connect_drone():
     drone = System()
-    print("🚁 Connecting to drone...")
-    await drone.connect(system_address="serial:///dev/ttyACM0:57600")
+    print("🚁 Searching for available ports...")
+    available_ports = glob.glob("/dev/ttyACM*") + glob.glob("/dev/ttyUSB*")
+
+    if not available_ports:
+        print("⚠️ No available ports found. Please connect the drone and try again.")
+        return
+
+    print("📜 Available ports:")
+    for i, port in enumerate(available_ports, start=1):
+        print(f"  {i}. {port}")
+
+    try:
+        selection = int(input("👉 Select the port number to connect to: ").strip())
+        if selection < 1 or selection > len(available_ports):
+            print("⚠️ Invalid selection. Please try again.")
+            return
+
+        selected_port = available_ports[selection - 1]
+        print(f"🚁 Connecting to drone on {selected_port}...")
+        await drone.connect(system_address=f"serial://{selected_port}:57600")
+    except ValueError:
+        print("⚠️ Invalid input. Please enter a number.")
+        return
 
     print("⏳ Waiting for drone to connect...")
     async for state in drone.core.connection_state():
@@ -149,7 +171,7 @@ async def change_mode(drone):
 
             elif selected_mode["type"] == "action":
                 if selected_mode["command"] == "takeoff":
-                    await drone.action.arm()
+                    # await drone.action.arm()
                     await drone.action.takeoff()
                 elif selected_mode["command"] == "land":
                     await drone.action.land()

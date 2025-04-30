@@ -1,4 +1,5 @@
 import asyncio
+import glob
 from mavsdk import System
 import os
 from datetime import datetime
@@ -44,9 +45,31 @@ def add_error(error_msg):
 async def run():
     try:
         drone = System()
-        await drone.connect(system_address="serial:///dev/ttyACM0:57600")
-        print("Connecting to drone...")
+        print("🚁 Searching for available ports...")
+        available_ports = glob.glob("/dev/ttyACM*") + glob.glob("/dev/ttyUSB*")
 
+        if not available_ports:
+            print("⚠️ No available ports found. Please connect the drone and try again.")
+            return
+
+        print("📜 Available ports:")
+        for i, port in enumerate(available_ports, start=1):
+            print(f"  {i}. {port}")
+
+        try:
+            selection = int(input("👉 Select the port number to connect to: ").strip())
+            if selection < 1 or selection > len(available_ports):
+                print("⚠️ Invalid selection. Please try again.")
+                return
+
+            selected_port = available_ports[selection - 1]
+            print(f"🚁 Connecting to drone on {selected_port}...")
+            await drone.connect(system_address=f"serial://{selected_port}:57600")
+        except ValueError:
+            print("⚠️ Invalid input. Please enter a number.")
+            return
+
+        print("⏳ Waiting for drone to connect...")
         async for state in drone.core.connection_state():
             if state.is_connected:
                 print("✅ Drone connected!")
@@ -149,8 +172,8 @@ async def fetch_battery(drone):
     while True:
         try:
             async for batt in drone.telemetry.battery():
-                telemetry_data["voltage"] = f"{batt.voltage_v:.2f}"
-                telemetry_data["battery"] = f"{batt.remaining_percent * 100:.1f}"
+                telemetry_data["voltage"] = f"{batt.voltage_v:.e2f}"
+                telemetry_data["battery"] = f"{batt.remaining_percent:.1f}"
         except Exception as e:
             add_error(f"Battery fetch error: {str(e)}")
             await asyncio.sleep(1)
