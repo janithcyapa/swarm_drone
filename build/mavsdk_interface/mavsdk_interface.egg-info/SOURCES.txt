@@ -9,6 +9,7 @@ setup.py
 ../../build/mavsdk_interface/mavsdk_interface.egg-info/top_level.txt
 ../../build/mavsdk_interface/mavsdk_interface.egg-info/zip-safe
 mavsdk_interface/__init__.py
+mavsdk_interface/mavsdk_node.py
 resource/mavsdk_interface
 test/test_copyright.py
 test/test_flake8.py

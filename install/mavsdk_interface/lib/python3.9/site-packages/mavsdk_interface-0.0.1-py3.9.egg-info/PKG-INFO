@@ -1,7 +1,7 @@
 Metadata-Version: 1.2
 Name: mavsdk-interface
 Version: 0.0.1
-Summary: TODO: Package description
+Summary: onnect to a PX4 Drone using mavsdk and provide a interface between mavsdk and ros
 Home-page: UNKNOWN
 Maintainer: jazz
 Maintainer-email: 34100523+janithcyapa@users.noreply.github.com

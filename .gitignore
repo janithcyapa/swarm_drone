@@ -1,0 +1,48 @@
+# ROS build and development files
+build/
+devel/
+install/
+log/
+*.pyc
+*.pyo
+*.swp
+*.swo
+*.bak
+
+# CMake and catkin generated files
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# ROS launch logs and other misc
+*.log
+*.launch.*
+
+# Python virtual environments
+venv/
+.env/
+
+# IDE/editor files
+.vscode/
+.idea/
+*.code-workspace
+
+# ROS-related hidden folders
+.catkin_workspace
+.rosinstall
+.ros/
+
+# MacOS and general system files
+.DS_Store
+Thumbs.db
+
+# Build artifacts in sub-packages (optional if you use git per package)
+**/build/
+**/devel/
+**/install/
+
+# Colcon (for ROS 2 workspaces)
+colcon_ws/build/
+colcon_ws/install/
+colcon_ws/log/

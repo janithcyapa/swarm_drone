@@ -15,11 +15,12 @@ setup(
     zip_safe=True,
     maintainer='jazz',
     maintainer_email='34100523+janithcyapa@users.noreply.github.com',
-    description='TODO: Package description',
+    description='onnect to a PX4 Drone using mavsdk and provide a interface between mavsdk and ros',
     license='TODO: License declaration',
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+             'mavsdk_node = mavsdk_interface.mavsdk_node:main',
         ],
     },
 )

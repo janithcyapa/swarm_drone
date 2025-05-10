@@ -1,3 +1,3 @@
 [console_scripts]
-
+mavsdk_node = mavsdk_interface.mavsdk_node:main
 

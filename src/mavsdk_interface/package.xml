@@ -3,7 +3,7 @@
 <package format="3">
   <name>mavsdk_interface</name>
   <version>0.0.1</version>
-  <description>TODO: Package description</description>
+  <description>Connect to a PX4 Drone using mavsdk and provide a interface between mavsdk and ros</description>
   <maintainer email="34100523+janithcyapa@users.noreply.github.com">jazz</maintainer>
   <license>TODO: License declaration</license>
 
